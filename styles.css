@@ -1,0 +1,655 @@
+:root {
+    --primary-color: #1a237e;
+    --secondary-color: #3949ab;
+    --accent-color: #5c6bc0;
+    --text-color: #333333;
+    --light-bg: #f5f5f5;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+/* Header Styles */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: transparent;
+    padding: 20px 0;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff6b00 !important;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/mohinh1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    color: white;
+    overflow: hidden;
+}
+
+/* Smaller hero section for Dashboard and About pages */
+.dashboard-hero-section,
+.about-hero-section {
+    min-height: 40vh !important;
+    padding: 80px 0 60px !important;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 35, 77, 0.7);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.dashboard-hero-section h1,
+.about-hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.hero-section .btn {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary {
+    background: #ff6b00;
+    border-color: #ff6b00;
+}
+
+.hero-section .btn-primary:hover {
+    background: #ff8533;
+    border-color: #ff8533;
+    transform: translateY(-3px);
+}
+
+.hero-section .btn-outline-light {
+    border-width: 2px;
+}
+
+.hero-section .btn-outline-light:hover {
+    background: white;
+    color: #1c234d;
+    transform: translateY(-3px);
+}
+
+/* Feature Cards */
+.feature-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* How It Works Section */
+.step-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+}
+
+.step-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+/* CTA Section */
+.cta-section {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-section .lead {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff6b00;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.btn-outline-light {
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+
+    .dashboard-hero-section h1,
+    .about-hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .member-image {
+        margin: 0 0 1rem 0;
+    }
+
+    .feature-card, .step-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.sensor-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 1.5rem 0;
+}
+
+.sensor-status {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    background: var(--primary-color) !important;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Member Cards */
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.member-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 2rem;
+    flex-shrink: 0;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-info {
+    flex-grow: 1;
+}
+
+.member-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.member-info p {
+    margin-bottom: 0.25rem;
+    color: var(--text-color);
+}
+
+.member-role {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+/* Control Panel Styles */
+.control-panel {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.mode-control, .device-control {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mode-control:hover, .device-control:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mode Button Styles */
+.mode-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    background: white;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mode-btn i {
+    font-size: 1.5rem;
+    color: #1a237e;
+    margin-bottom: 4px;
+}
+
+.mode-btn span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.mode-btn.active {
+    background: #1a237e;
+    border-color: #1a237e;
+    color: white;
+    box-shadow: 0 4px 8px rgba(26, 35, 126, 0.3);
+}
+
+.mode-btn.active i {
+    color: white;
+}
+
+.mode-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Device Button Styles */
+.device-card {
+    position: relative;
+    padding: 0 5px;
+}
+
+.device-btn {
+    width: 100%;
+    height: 100px;
+    border-radius: 12px;
+    background: white;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.device-btn i {
+    font-size: 2rem;
+    color: #1a237e;
+    margin-bottom: 4px;
+}
+
+.device-btn span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.device-btn:not([disabled]):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.device-btn.active {
+    background: #1a237e;
+    border-color: #1a237e;
+    color: white;
+    box-shadow: 0 4px 8px rgba(26, 35, 126, 0.3);
+}
+
+.device-btn.active i {
+    color: white;
+}
+
+.device-btn[disabled] {
+    opacity: 0.7;
+    cursor: not-allowed;
+    background: #f8f9fa;
+}
+
+/* Status Badge */
+.status-badge {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: #e0e0e0;
+    color: #666;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.device-btn.active .status-badge {
+    background: #4caf50;
+    color: white;
+    box-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
+}
+
+/* Animation for device icons */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.device-btn.active .fa-fan {
+    animation: spin 2s linear infinite;
+}
+
+.device-btn.active .fa-tint {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.device-btn.active .fa-bell {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    75% { transform: translateX(2px); }
+    100% { transform: translateX(0); }
+}
+
+/* Sleep Control Styles */
+.sleep-control {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.sleep-control:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sleep-control .input-group {
+    width: 100%;
+    max-width: 200px;
+}
+
+.sleep-control .form-control {
+    border-radius: 8px 0 0 8px;
+    border: 2px solid #e0e0e0;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+}
+
+.sleep-control .btn-primary {
+    border-radius: 0 8px 8px 0;
+    padding: 8px 12px;
+    background: #1a237e;
+    border: 2px solid #1a237e;
+}
+
+.sleep-control .btn-primary:hover {
+    background: #0d1b6b;
+    border-color: #0d1b6b;
+}
+
+.sleep-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    background: white;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sleep-btn i {
+    font-size: 1.5rem;
+    color: #1a237e;
+    margin-bottom: 4px;
+}
+
+.sleep-btn span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.sleep-btn.active {
+    background: #1a237e;
+    border-color: #1a237e;
+    color: white;
+    box-shadow: 0 4px 8px rgba(26, 35, 126, 0.3);
+}
+
+.sleep-btn.active i {
+    color: white;
+}
+
+.sleep-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Time Input Styles */
+.time-input {
+    width: 60px !important;
+    text-align: center;
+    padding: 8px 4px !important;
+    font-size: 0.9rem;
+}
+
+.input-group-text {
+    background: transparent;
+    border: none;
+    padding: 0 4px;
+    font-weight: 500;
+    color: #666;
+}
+
+.sleep-control .input-group {
+    width: 100%;
+    max-width: 300px;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    overflow: hidden;
+}
+
+.sleep-control .form-control {
+    border: none;
+    border-radius: 0;
+    padding: 8px 4px;
+    font-size: 0.9rem;
+}
+
+.sleep-control .form-control:focus {
+    box-shadow: none;
+    border-color: #1a237e;
+}
+
+.sleep-control .btn-primary {
+    border-radius: 0;
+    padding: 8px 12px;
+    background: #1a237e;
+    border: none;
+}
+
+.sleep-control .btn-primary:hover {
+    background: #0d1b6b;
+} 
